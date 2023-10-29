@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/cartView"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imvCart"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/light1"/>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/titleCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/light1"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit"
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/priceCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_price"
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="5dp">
+            <ImageButton
+                android:id="@+id/plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/plus"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_add_24"
+                android:background="@drawable/search_background" />
+            <TextView
+                android:id="@+id/noProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sumProducts"
+                android:textColor="@color/yellow"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <ImageButton
+                android:id="@+id/minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_remove_24"
+                android:contentDescription="@string/minus"
+                android:background="@drawable/search_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/totalPricesEachProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/totalEachProduct"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

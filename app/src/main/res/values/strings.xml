@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Cart</string>
+    <string name="search">search</string>
+    <string name="light1">[Siêu HOT] Đèn Ngủ Chiếu Sao Tự Xoay 3D</string>
+    <string name="unit">₫</string>
+    <string name="unit_price">55000</string>
+    <string name="totalAll">0</string>
+    <string name="quantity">Quantity</string>
+    <string name="sum_price">Sum Price</string>
+    <string name="total">Total</string>
+    <string name="check_out">Checkout</string>
+    <string name="totalEachProduct">0</string>
+    <string name="sumProducts">2</string>
+    <string name="plus">plus</string>
+    <string name="minus">minus</string>
+</resources>
